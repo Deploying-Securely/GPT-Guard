@@ -7,7 +7,7 @@ requirements = []
 
 setup(
     name="gpt_guard",
-    version="1.0.0",
+    version="1.0.1",
     author="Walter Haydock",
     author_email="walter@deploy-securely.com",
     description="A lightweight library to sanitize data provided to AI tools",

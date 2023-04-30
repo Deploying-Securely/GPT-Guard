@@ -2,12 +2,10 @@
 A lightweight library to sanitize data provided to AI tools.
 
 # Setup
-
-```pip install gpt-guard`
-from gpt_guard import extract_sensitive_data, re_append_sensitive_data`
+```pip install gpt-guard\n
+from gpt_guard import extract_sensitive_data, re_append_sensitive_data
 
 # Usage Example
-
 ```query_text = ("Please summarize this technical document for ACME CORP:\
 ## Introduction \
 This document provides technical details for the deployment a web application. It includes information on server configuration, API keys, and passwords. \
@@ -26,7 +24,7 @@ The following API keys are used in the web application: \
 The following passwords are used to access various components of the  web application: \
 - MySQL database password: `fake-password-123` \
 - Application server password: `fake-password-456` \
-- Admin panel password: `fake-password-789`")```
+- Admin panel password: `fake-password-789`")
 
 sanitized = sanitize_query(query_text, custom_identifiers=['ACME CORP'])
 
